@@ -1,0 +1,79 @@
+.workshops-grid {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 16px;
+  max-width: 900px;
+  margin: 0 auto 24px;
+}
+
+.workshop-card {
+  background: var(--code-bg);
+  border: 1px solid var(--border);
+  border-radius: 14px;
+  padding: 20px;
+  text-align: left;
+  transition: all 0.2s;
+}
+
+.workshop-card:hover {
+  border-color: var(--accent-border);
+  transform: translateY(-2px);
+  box-shadow: var(--shadow);
+}
+
+.workshop-year {
+  display: inline-block;
+  font-size: 12px;
+  padding: 3px 10px;
+  border-radius: 100px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  font-weight: 700;
+  margin-bottom: 10px;
+}
+
+.workshop-card h4 {
+  font-size: 15px;
+  color: var(--text-h);
+  margin: 0 0 6px;
+  font-weight: 600;
+}
+
+.workshop-venue {
+  font-size: 13px;
+  color: var(--text);
+  margin: 0 0 8px;
+}
+
+.workshop-duration {
+  font-size: 12px;
+  color: var(--text);
+  opacity: 0.7;
+  font-weight: 500;
+}
+
+.show-more-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  background: var(--accent-bg);
+  color: var(--accent);
+  border: 2px solid var(--accent-border);
+  padding: 10px 24px;
+  border-radius: 100px;
+  font-size: 14px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.2s;
+}
+
+.show-more-btn:hover {
+  background: var(--accent);
+  color: #fff;
+}
+
+@media (max-width: 768px) {
+  .workshops-grid {
+    grid-template-columns: 1fr;
+  }
+}
